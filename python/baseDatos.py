@@ -57,7 +57,7 @@ def Delete():
 	return("DELETE FROM {} WHERE {}".format(var1,var2))
 
 con=sqlite3.connect(conectar())
-cur=con.cursor()
+cur=sqlite3.connect(conectar()).cursor()
 
 salir=False
 while salir==False:
