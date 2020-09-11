@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename="img/favicon.icon") }}" >
+</head>
+<body>
+	ACA VA EL HEADER
+	<h1>
+		{{titulo}}
+	</h1>
+	{% block contenido %}
+	{% endblock %}
+</body>
+</html>
